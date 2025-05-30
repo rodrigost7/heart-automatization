@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-05-30T02:39:46.283440" rpa="false" schemaversion="5">
+<suite id="s1" name="Diagnosticar" source="c:\projects\heart-automatization\TestCase\diagnosticar.robot">
+<test id="s1-t1" name="Preencher Formulario e diagnosticar chance de doença" line="8">
+<kw name="Acessar formulario" owner="formulario_page">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-05-30T02:39:46.993707" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\projects\\heart-automatization\\browser\\traces\\9b2a6916-9fdd-4479-abbe-1cdb2adf7cc8"}</msg>
+<msg time="2025-05-30T02:39:47.024385" level="INFO">Starting Browser process C:\Program Files\Python313\Lib\site-packages\Browser\wrapper\index.js using port 60688</msg>
+<msg time="2025-05-30T02:39:47.024640" level="INFO">Node startup parameters: ['node', 'C:\\Program Files\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '60688']</msg>
+<msg time="2025-05-30T02:39:48.529937" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\projects\\heart-automatization\\browser\\traces\\9b2a6916-9fdd-4479-abbe-1cdb2adf7cc8"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=${False}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-05-30T02:39:46.992901" elapsed="1.537727"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-05-30T02:39:48.532536" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2025-05-30T02:39:48.563141" level="INFO">Successfully created context. </msg>
+<msg time="2025-05-30T02:39:48.563370" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-05-30T02:39:48.531128" elapsed="0.032436"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-05-30T02:39:49.103440" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/</msg>
+<arg>${URL_BASE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-05-30T02:39:48.563863" elapsed="0.539888"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-30T02:39:49.166016" level="INFO">Waited for Element with selector xpath=//h2 at state visible</msg>
+<arg>xpath=//h2</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-30T02:39:49.103972" elapsed="0.062442"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:50.167524" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:49.166661" elapsed="1.001101"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:46.991884" elapsed="3.176036"/>
+</kw>
+<kw name="Preencher campos obrigatorios" owner="preencher_formulario">
+<kw name="Preencher idade" owner="preencher_formulario">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-30T02:39:50.176512" level="INFO">Waited for Element with selector xpath=//h2 at state visible</msg>
+<arg>xpath=//h2</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-30T02:39:50.169176" elapsed="0.008035"/>
+</kw>
+<kw name="Gerar Idade" owner="IdadeGenerator">
+<msg time="2025-05-30T02:39:50.179082" level="INFO">${idade} = 38</msg>
+<var>${idade}</var>
+<arg>15</arg>
+<arg>90</arg>
+<status status="PASS" start="2025-05-30T02:39:50.177522" elapsed="0.001755"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-30T02:39:50.180031" level="INFO">Types the text '38' in the given field.</msg>
+<arg>xpath=//input[@name='age']</arg>
+<arg>${idade}</arg>
+<arg>delay=0.04</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:50.179501" elapsed="0.141273"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:50.168895" elapsed="0.152097"/>
+</kw>
+<kw name="Selecionar sexo" owner="preencher_formulario">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-05-30T02:39:50.322016" level="INFO">Selects the option(s) F by attribute SelectAttribute.value from element //select[@name="sex"].</msg>
+<arg>//select[@name="sex"]</arg>
+<arg>value</arg>
+<arg>F</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:50.321508" elapsed="0.033443"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:51.356164" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:50.355343" elapsed="1.001064"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:50.321199" elapsed="1.035366"/>
+</kw>
+<kw name="Selecionar tipo de dor no peito" owner="preencher_formulario">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-05-30T02:39:51.357519" level="INFO">Selects the option(s) ATA by attribute SelectAttribute.value from element //select[@name="chestPainType"].</msg>
+<arg>//select[@name="chestPainType"]</arg>
+<arg>value</arg>
+<arg>ATA</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:51.357078" elapsed="0.021842"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:52.379669" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:51.379200" elapsed="1.000698"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:51.356767" elapsed="1.023276"/>
+</kw>
+<kw name="Preencher pressao aterial" owner="preencher_formulario">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-30T02:39:52.380755" level="INFO">${pressao} = 0</msg>
+<var>${pressao}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-30T02:39:52.380542" elapsed="0.000316"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-30T02:39:52.381480" level="INFO">Types the text '0' in the given field.</msg>
+<arg>xpath=//input[@name='restingBP']</arg>
+<arg>${pressao}</arg>
+<arg>delay=0.04</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:52.381013" elapsed="0.089844"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:52.971728" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:52.471122" elapsed="0.500957"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:52.380246" elapsed="0.592463"/>
+</kw>
+<kw name="Preencher colesterol" owner="preencher_formulario">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-30T02:39:52.974214" level="INFO">${colesterol} = 0</msg>
+<var>${colesterol}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-30T02:39:52.973881" elapsed="0.000498"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-30T02:39:52.975254" level="INFO">Types the text '0' in the given field.</msg>
+<arg>xpath=//input[@name='cholesterol']</arg>
+<arg>${colesterol}</arg>
+<arg>delay=0.04</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:52.974614" elapsed="0.084366"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:53.560016" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:53.059245" elapsed="0.501005"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:52.973242" elapsed="0.587210"/>
+</kw>
+<kw name="Preencher glicemia em jejum" owner="preencher_formulario">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-30T02:39:53.561498" level="INFO">${glicemia} = 0</msg>
+<var>${glicemia}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-30T02:39:53.561229" elapsed="0.000418"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-30T02:39:53.562635" level="INFO">Types the text '0' in the given field.</msg>
+<arg>xpath=//input[@name='fastingBS']</arg>
+<arg>${glicemia}</arg>
+<arg>delay=0.04</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:53.561885" elapsed="0.086215"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:54.148847" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:53.648368" elapsed="0.500710"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:53.560703" elapsed="0.588518"/>
+</kw>
+<kw name="Selecionar eletrocardiograma em repouso" owner="preencher_formulario">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-05-30T02:39:54.150255" level="INFO">Selects the option(s) Normal by attribute SelectAttribute.value from element xpath=//select[@name="restingECG"].</msg>
+<arg>xpath=//select[@name="restingECG"]</arg>
+<arg>value</arg>
+<arg>Normal</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:54.149714" elapsed="0.021964"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:55.172364" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:54.171941" elapsed="1.000670"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:54.149414" elapsed="1.023372"/>
+</kw>
+<kw name="Preencher frequencia cardiaca" owner="preencher_formulario">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-30T02:39:55.173588" level="INFO">${frequencia} = 120</msg>
+<var>${frequencia}</var>
+<arg>120</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-30T02:39:55.173337" elapsed="0.000377"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-30T02:39:55.174374" level="INFO">Types the text '120' in the given field.</msg>
+<arg>xpath=//input[@name='maxHR']</arg>
+<arg>${frequencia}</arg>
+<arg>delay=0.04</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:55.173887" elapsed="0.169727"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:55.844448" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:55.343878" elapsed="0.500794"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:55.173009" elapsed="0.671806"/>
+</kw>
+<kw name="Selecionar angina induzida por exercício" owner="preencher_formulario">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-05-30T02:39:55.845929" level="INFO">Selects the option(s) N by attribute SelectAttribute.value from element xpath=//select[@name="exerciseAngina"].</msg>
+<arg>xpath=//select[@name="exerciseAngina"]</arg>
+<arg>value</arg>
+<arg>N</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:55.845396" elapsed="0.020970"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:56.866947" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:55.866634" elapsed="1.000541"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:55.845033" elapsed="1.022293"/>
+</kw>
+<kw name="Preencher oldpeak" owner="preencher_formulario">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-30T02:39:56.868110" level="INFO">${oldpeak} = 1.1</msg>
+<var>${oldpeak}</var>
+<arg>1.1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-30T02:39:56.867887" elapsed="0.000341"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-05-30T02:39:56.868915" level="INFO">Types the text '1.1' in the given field.</msg>
+<arg>xpath=//input[@name='oldpeak']</arg>
+<arg>${oldpeak}</arg>
+<arg>delay=0.04</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:56.868398" elapsed="0.169791"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:57.539044" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:57.038462" elapsed="0.500809"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:56.867549" elapsed="0.671867"/>
+</kw>
+<kw name="Selecionar inclinacao do ST" owner="preencher_formulario">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-05-30T02:39:57.540813" level="INFO">Selects the option(s) Flat by attribute SelectAttribute.value from element xpath=//select[@name="stSlope"].</msg>
+<arg>xpath=//select[@name="stSlope"]</arg>
+<arg>value</arg>
+<arg>Flat</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:57.540180" elapsed="0.025494"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:58.566905" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:57.566085" elapsed="1.001144"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:57.539772" elapsed="1.027681"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:50.168514" elapsed="8.399114"/>
+</kw>
+<kw name="Clicar em diagnosticar" owner="preencher_formulario">
+<kw name="Click" owner="Browser">
+<msg time="2025-05-30T02:39:58.570324" level="INFO">Clicks the element 'xpath=//button[text()="Diagnosticar"]'.</msg>
+<arg>xpath=//button[text()="Diagnosticar"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-05-30T02:39:58.569375" elapsed="0.035620"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-30T02:39:59.606073" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-30T02:39:58.605403" elapsed="1.000904"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:58.568569" elapsed="1.037887"/>
+</kw>
+<kw name="Validar envio do formulario" owner="preencher_formulario">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-30T02:39:59.617593" level="INFO">Waited for Element with selector xpath=//h2[text()="Resultado do Diagnóstico"] at state visible</msg>
+<arg>xpath=//h2[text()="Resultado do Diagnóstico"]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-30T02:39:59.607772" elapsed="0.010127"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-05-30T02:39:59.628908" level="INFO">Waited for Element with selector xpath=//p[text()="de chance de possuir doença cardíaca."] at state visible</msg>
+<arg>xpath=//p[text()="de chance de possuir doença cardíaca."]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-05-30T02:39:59.618202" elapsed="0.011133"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:59.607150" elapsed="0.022421"/>
+</kw>
+<status status="PASS" start="2025-05-30T02:39:46.990968" elapsed="12.639239"/>
+</test>
+<doc>Realizar preenchimento do formulário e diagnosticar resultado de doença cardíaca</doc>
+<status status="PASS" start="2025-05-30T02:39:46.289697" elapsed="13.432959"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Diagnosticar">Diagnosticar</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

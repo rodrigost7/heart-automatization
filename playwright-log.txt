@@ -1,0 +1,102 @@
+{"level":30,"time":"2025-05-30T05:39:47.654Z","pid":26008,"hostname":"Rodrigo","msg":"Listening on 60688"}
+(node:26008) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-05-30T05:39:48.106Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-05-30T05:39:48.526Z","pid":26008,"hostname":"Rodrigo","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2025-05-30T05:39:48.527Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-05-30T05:39:48.526Z","pid":26008,"hostname":"Rodrigo","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-05-30T05:39:48.535Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-05-30T05:39:48.535Z","pid":26008,"hostname":"Rodrigo","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-30T05:39:48.535Z","pid":26008,"hostname":"Rodrigo","msg":"Trace file: "}
+{"level":30,"time":"2025-05-30T05:39:48.555Z","pid":26008,"hostname":"Rodrigo","msg":"Changed active context"}
+{"level":30,"time":"2025-05-30T05:39:48.556Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method newContext"}
+{"level":30,"time":"2025-05-30T05:39:48.566Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-05-30T05:39:48.567Z","pid":26008,"hostname":"Rodrigo","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-05-30T05:39:48.916Z","pid":26008,"hostname":"Rodrigo","msg":"Video path: undefined"}
+{"level":30,"time":"2025-05-30T05:39:48.916Z","pid":26008,"hostname":"Rodrigo","msg":"Changed active page"}
+{"level":30,"time":"2025-05-30T05:39:49.100Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method newPage"}
+{"level":30,"time":"2025-05-30T05:39:49.105Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-30T05:39:49.106Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//h2 in page."}
+{"level":30,"time":"2025-05-30T05:39:49.163Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-30T05:39:50.169Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-30T05:39:50.169Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//h2 in page."}
+{"level":30,"time":"2025-05-30T05:39:50.174Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-30T05:39:50.180Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:50.180Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//input[@name='age'] in page."}
+{"level":30,"time":"2025-05-30T05:39:50.318Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:50.322Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:50.323Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with //select[@name=\"sex\"] in page."}
+{"level":30,"time":"2025-05-30T05:39:50.352Z","pid":26008,"hostname":"Rodrigo","msg":"Option entries: 3"}
+{"level":30,"time":"2025-05-30T05:39:50.352Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:50.352Z","pid":26008,"hostname":"Rodrigo","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-30T05:39:51.358Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:51.358Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with //select[@name=\"chestPainType\"] in page."}
+{"level":30,"time":"2025-05-30T05:39:51.375Z","pid":26008,"hostname":"Rodrigo","msg":"Option entries: 5"}
+{"level":30,"time":"2025-05-30T05:39:51.375Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:51.375Z","pid":26008,"hostname":"Rodrigo","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-30T05:39:52.381Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:52.382Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//input[@name='restingBP'] in page."}
+{"level":30,"time":"2025-05-30T05:39:52.469Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:52.976Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:52.976Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//input[@name='cholesterol'] in page."}
+{"level":30,"time":"2025-05-30T05:39:53.057Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:53.562Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:53.563Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//input[@name='fastingBS'] in page."}
+{"level":30,"time":"2025-05-30T05:39:53.646Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:54.151Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:54.151Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//select[@name=\"restingECG\"] in page."}
+{"level":30,"time":"2025-05-30T05:39:54.169Z","pid":26008,"hostname":"Rodrigo","msg":"Option entries: 4"}
+{"level":30,"time":"2025-05-30T05:39:54.169Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:54.169Z","pid":26008,"hostname":"Rodrigo","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-30T05:39:55.174Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:55.174Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//input[@name='maxHR'] in page."}
+{"level":30,"time":"2025-05-30T05:39:55.341Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:55.846Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:55.847Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//select[@name=\"exerciseAngina\"] in page."}
+{"level":30,"time":"2025-05-30T05:39:55.864Z","pid":26008,"hostname":"Rodrigo","msg":"Option entries: 3"}
+{"level":30,"time":"2025-05-30T05:39:55.864Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:55.864Z","pid":26008,"hostname":"Rodrigo","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-30T05:39:56.869Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:56.869Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//input[@name='oldpeak'] in page."}
+{"level":30,"time":"2025-05-30T05:39:57.036Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method typeText"}
+{"level":30,"time":"2025-05-30T05:39:57.541Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:57.541Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//select[@name=\"stSlope\"] in page."}
+{"level":30,"time":"2025-05-30T05:39:57.563Z","pid":26008,"hostname":"Rodrigo","msg":"Option entries: 4"}
+{"level":30,"time":"2025-05-30T05:39:57.563Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-05-30T05:39:57.563Z","pid":26008,"hostname":"Rodrigo","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-05-30T05:39:58.571Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method click"}
+{"level":30,"time":"2025-05-30T05:39:58.571Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//button[text()=\"Diagnosticar\"] in page."}
+{"level":30,"time":"2025-05-30T05:39:58.602Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method click"}
+{"level":30,"time":"2025-05-30T05:39:59.609Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-30T05:39:59.609Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//h2[text()=\"Resultado do Diagnóstico\"] in page."}
+{"level":30,"time":"2025-05-30T05:39:59.615Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-30T05:39:59.619Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-05-30T05:39:59.619Z","pid":26008,"hostname":"Rodrigo","msg":"Strict mode is enabled, find Locator with xpath=//p[text()=\"de chance de possuir doença cardíaca.\"] in page."}
+{"level":30,"time":"2025-05-30T05:39:59.627Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-05-30T05:39:59.635Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.639Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.642Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.644Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.647Z","pid":26008,"hostname":"Rodrigo","msg":"Changed active context"}
+{"level":30,"time":"2025-05-30T05:39:59.647Z","pid":26008,"hostname":"Rodrigo","msg":"Changing current active page: page=87d91584-6c82-4434-81ca-fde3d442c6c0"}
+{"level":30,"time":"2025-05-30T05:39:59.647Z","pid":26008,"hostname":"Rodrigo","msg":"Changed active page"}
+{"level":30,"time":"2025-05-30T05:39:59.651Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.654Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.656Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-05-30T05:39:59.656Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-05-30T05:39:59.659Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-05-30T05:39:59.660Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-05-30T05:39:59.662Z","pid":26008,"hostname":"Rodrigo","msg":"Changing current active page: page=87d91584-6c82-4434-81ca-fde3d442c6c0"}
+{"level":30,"time":"2025-05-30T05:39:59.662Z","pid":26008,"hostname":"Rodrigo","msg":"Changed active page"}
+{"level":30,"time":"2025-05-30T05:39:59.665Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.667Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.669Z","pid":26008,"hostname":"Rodrigo","msg":"Changed active context"}
+{"level":30,"time":"2025-05-30T05:39:59.670Z","pid":26008,"hostname":"Rodrigo","msg":"Changing current active page: page=87d91584-6c82-4434-81ca-fde3d442c6c0"}
+{"level":30,"time":"2025-05-30T05:39:59.670Z","pid":26008,"hostname":"Rodrigo","msg":"Changed active page"}
+{"level":30,"time":"2025-05-30T05:39:59.672Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-05-30T05:39:59.682Z","pid":26008,"hostname":"Rodrigo","msg":"Removed page=c7568bfd-5813-4b7d-bbbf-19a80ddc4f22 from context=abc34e5a-803c-4135-aa3e-d779a5953ef0 page stack"}
+{"level":30,"time":"2025-05-30T05:39:59.719Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-05-30T05:39:59.727Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:39:59.727Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-05-30T05:40:01.785Z","pid":26008,"hostname":"Rodrigo","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-05-30T05:40:01.910Z","pid":26008,"hostname":"Rodrigo","msg":"End of node method closeAllBrowsers"}
